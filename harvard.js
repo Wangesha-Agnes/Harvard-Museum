@@ -7,8 +7,7 @@ searchInput.addEventListener('input', async function() {
  const query = this.value;
  if (query === '') {
  suggestionContainer.innerHTML = '';
-
- resultsContainer.innerHTML = ''; 
+ resultsContainer.innerHTML = ''; // Clear results if input is empty
  return;
  }
  const url = `${API_URL}?apikey=${API_KEY}&q=${query}`;
