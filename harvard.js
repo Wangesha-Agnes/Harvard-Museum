@@ -20,3 +20,16 @@ searchInput.addEventListener('input', async function() {
  }
 });
 
+function displaySuggestions(artworks) {
+    suggestionContainer.innerHTML = '';
+    artworks.forEach(artwork => {
+    const suggestion = document.createElement('div');
+    suggestion.textContent = artwork.title || 'Unknown Title';
+    suggestion.addEventListener('click', function() {
+    searchInput.value = this.textContent;
+    suggestionContainer.innerHTML = '';
+    searchArtworks();
+    });
+    suggestionContainer.appendChild(suggestion);
+    });
+   }
