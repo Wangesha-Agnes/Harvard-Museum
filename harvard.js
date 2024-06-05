@@ -33,3 +33,24 @@
 //         resultsContainer.appendChild(artworkElement);
 //     });
 // }
+
+function displayArtworks(artworks) {
+    resultsContainer.innerHTML = '';
+    artworks.forEach(artwork => {
+    const artworkElement = document.createElement('div');
+    artworkElement.className = 'artwork';
+    const title = artwork.title || 'Unknown Title';
+    const artist = artwork.people ? artwork.people.map(person => person.name).join(', ') : 'Unknown Artist';
+    const date = artwork.dated || 'Unknown Date';
+    const medium = artwork.medium || 'Unknown Medium';
+    const imageUrl = artwork.primaryimageurl || '';
+    artworkElement.innerHTML = `
+    <h3>${title}</h3>
+    <p><strong>Artist:</strong> ${artist}</p>
+    <p><strong>Date:</strong> ${date}</p>
+    <p><strong>Medium:</strong> ${medium}</p>
+    ${imageUrl ? `<img src="${imageUrl}" alt="${title}">` : ''}
+    `;
+    resultsContainer.appendChild(artworkElement);
+    });
+   }
