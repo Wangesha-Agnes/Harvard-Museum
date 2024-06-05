@@ -8,6 +8,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    overflow: hidden;
 }
 .artwork {
     border: 1px solid #ccc;
@@ -30,7 +31,11 @@ body {
 button{
     border-radius: 10px;
     height: 40px;
+<<<<<<< HEAD
+    width: 150px; 
+=======
     width: 80px;
+>>>>>>> feature/5
 }
 
 input{
