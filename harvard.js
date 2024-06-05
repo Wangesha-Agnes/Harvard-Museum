@@ -1,5 +1,6 @@
 const API_KEY = 'eabd79d5-699b-45ca-ab08-8def26cbdf99'; 
 const API_URL = 'https://api.harvardartmuseums.org/object';
+
 async function searchArtworks() {
     const query = document.getElementById('search-input').value;
     const url = `${API_URL}?apikey=${API_KEY}&q=${query}`;
@@ -11,6 +12,7 @@ async function searchArtworks() {
         console.error('Error fetching data:', error);
     }
 }
+
 
 function displayArtworks(artworks) {
     const resultsContainer = document.getElementById('results');
