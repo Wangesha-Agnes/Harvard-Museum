@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="harvard.css">
 </head>
-<body>
+<body id="body">
     <div>
         
     <div class="navbar">
@@ -18,11 +18,12 @@
         <a href="#"class="navtext">Favorites</a>
     </div>
         <div class="search-container">
-            <input type="text" id="search-input" placeholder="Search for artworks by title or artist">
+            <input type="text" id="search-input" placeholder="Search.....">
             <button onclick="searchArtworks()">Search</button>
 
         </div>
         <div id="results" class="artwork-container"></div>
+        <div  id="suggestions"></div>
         
         <script src="harvard.js"></script>
     </div>

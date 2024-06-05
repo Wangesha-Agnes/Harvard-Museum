@@ -8,6 +8,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    overflow: hidden;
 }
 .artwork {
     border: 1px solid #ccc;
@@ -27,26 +28,30 @@ body {
 }
 
 button{
-    border-radius: 30px;
+    border-radius: 10px;
     height: 40px;
+<<<<<<< HEAD
     width: 150px; 
+=======
+    width: 80px;
+>>>>>>> feature/5
 }
 
 input{
-    border-radius: 30px;
+    border-radius: 10px;
     height: 40px;
-    width: 200px; 
+    width: 160px; 
 }
 a{
     text-decoration: none;
 }
 
 .navbar{
-    gap: 250px;
+    gap: 120px;
     /* position: relative; */
     display: flex;
     text-decoration-color: white;
-    background-image: url(Images/harvard_art.jpg);
+    background-image: url(Images/museum.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: initial;
@@ -54,5 +59,54 @@ a{
 }
 
 .navtext{
-    color: white;
+    gap: 10px;
+    margin-top: 20px;
+    color: rgb(7, 7, 7);
+}
+
+#body{
+    background-color: #8c8bbd;
+
+}
+
+@media screen and (max-width: 767px) {
+    .navbar{
+        display: flex;  
+        gap: 5px;
+        margin-right: 5px;
+      }  
+      #art{
+          height:550px
+      }
+
+}
+
+@media screen and (min-width: 768px) and (max-width:1138px) {
+.navbar{
+  display: flex;  
+  gap: 5px;
+  margin-right: 5px;
+}  
+#art{
+    height:800px
+}
+input{
+    margin-top: 100px;
+  }
+  button{
+    margin-top: 100px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+    .navbar{
+        display: flex;  
+        gap: 50px;
+        font-size: larger;
+       
+      }  
+      #art{
+          height:700px
+}
+
 }
