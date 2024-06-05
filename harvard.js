@@ -50,6 +50,7 @@ async function searchArtworks() {
     }
     suggestionContainer.innerHTML = ''; 
    }
+   
    function displayArtworks(artworks) {
     resultsContainer.innerHTML = '';
     artworks.forEach(artwork => {
@@ -70,3 +71,4 @@ async function searchArtworks() {
     resultsContainer.appendChild(artworkElement);
     });
    }
+
