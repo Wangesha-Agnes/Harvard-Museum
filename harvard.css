@@ -3,112 +3,74 @@ body {
 }
 .search-container {
     margin: 20px;
+    
 }
 .artwork-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     gap: 20px;
-    overflow: hidden;
+}
+.artwork-wrapper {
+    flex-basis: calc(33.33% - 20px); 
+    max-width: 300px;
 }
 .artwork {
     border: 1px solid #ccc;
     padding: 10px;
-    width: 300px;
+    width: 100%;
+    height: auto; 
+    object-fit: cover; 
 }
 .artwork img {
     width: 100%;
+    height: auto; 
+    object-fit: cover; 
 }
-
-#art{
-   height: 750%;
-   object-fit: cover;
-   width: 300%;
-   /* position:absolute; */
-   
-
+#art {
+    height: 750%;
+    object-fit: cover;
+    width: 300%;
 }
-
-button{
+button {
     border-radius: 10px;
     height: 40px;
-<<<<<<< HEAD
-    width: 150px; 
-=======
-    width: 80px;
->>>>>>> feature/5
-}
-
-input{
-    border-radius: 10px;
-    height: 40px;
-    width: 160px; 
-}
-a{
-    text-decoration: none;
-}
-
-.navbar{
-    gap: 120px;
-    /* position: relative; */
-    display: flex;
-    text-decoration-color: white;
-    background-image: url(Images/museum.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: initial;
-    color: white;
-}
-
-.navtext{
-    gap: 10px;
-    margin-top: 20px;
-    color: rgb(7, 7, 7);
-}
-
-#body{
-    background-color: #8c8bbd;
-
+    width: 150px;
 }
 
 @media screen and (max-width: 767px) {
-    .navbar{
-        display: flex;  
+    .navbar {
+        display: flex;
         gap: 5px;
         margin-right: 5px;
-      }  
-      #art{
-          height: 550px
-          
-      }
-
+    }
+    #art {
+        height: 550px;
+    }
 }
-
 @media screen and (min-width: 768px) and (max-width:1138px) {
-.navbar{
-  display: flex;  
-  gap: 5px;
-  margin-right: 5px;
-}  
-#art{
-    height:800px
+    .navbar {
+        display: flex;
+        gap: 5px;
+        margin-right: 5px;
+    }
+    #art {
+        height: 800px;
+    }
+    input {
+        margin-top: 100px;
+    }
+    button {
+        margin-top: 100px;
+    }
 }
-input{
-    margin-top: 100px;
-  }
-  button{
-    margin-top: 100px;
-  }
-}
-
 @media screen and (min-width: 992px) {
-    .navbar{
-        display: flex;  
+    .navbar {
+        display: flex;
         gap: 50px;
         font-size: larger;
-       
-      }  
-      #art{
-          height:700px
-}
-
+    }
+    #art {
+        height: 700px;
+    }
 }
