@@ -41,16 +41,64 @@ button {
     height: 40px;
     width: 150px;
 }
+
+#search-input{
+    width: 400px;
+    padding-left: 8px;
+    margin-left: 600px;
+    height: 30px;
+  }
+
+.navbar{
+    background-image: url(Images/museum\ hill.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1900px;
+    height: 800px;
+}
+
+#suggestions{
+    cursor: pointer;
+}
+
+#suggestions{
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    width: 40%;
+    margin-left: 520px;
+} 
+
+.navtext{
+    color: white;
+    text-decoration: none;
+}
 /* Media Queries */
 @media screen and (max-width: 767px) {
-    .navbar {
-        display: flex;
-        gap: 5px;
-        margin-right: 5px;
+    .navbar{
+        background-image: url(Images/museum\ hill.jpg);
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 480px;
+        height: 400px;
     }
     #art {
         height: 550px;
     }
+
+    .search-container {
+        margin: 20px;
+        display: flex;
+    }
+
+    #search-input{
+        width: 400px;
+        padding-left: 8px;
+        margin-left: 0px;
+        height: 30px;
+      }
 }
 @media screen and (min-width: 768px) and (max-width:1138px) {
     .navbar {
