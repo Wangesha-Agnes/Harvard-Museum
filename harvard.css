@@ -23,18 +23,15 @@ body {
    height: 800px;
    object-fit: cover;
    width: 100%;
-   /* position:absolute; */
 
 }
 
 button{
     border-radius: 10px;
     height: 40px;
-<<<<<<< HEAD
     width: 150px; 
-=======
     width: 80px;
->>>>>>> feature/5
+
 }
 
 input{
@@ -48,7 +45,6 @@ a{
 
 .navbar{
     gap: 120px;
-    /* position: relative; */
     display: flex;
     text-decoration-color: white;
     background-image: url(Images/museum.jpg);
@@ -66,7 +62,10 @@ a{
 
 #body{
     background-color: #8c8bbd;
+}
 
+#suggestions div:hover{
+    cursor: pointer;
 }
 
 @media screen and (max-width: 767px) {
