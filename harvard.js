@@ -54,3 +54,10 @@ function displayArtworks(artworks) {
     resultsContainer.appendChild(artworkElement);
     });
    }
+
+//    document.addEventListener('DOMContentLoaded', function(){
+//     var img = document.getElementById("art");
+//     if (img.alt === "art") {
+//         img.classList.add("no-box");
+//     }
+//    });
