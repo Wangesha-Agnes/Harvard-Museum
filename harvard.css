@@ -1,5 +1,6 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: darkslategray;
 }
 .search-container {
     margin: 20px;
@@ -20,12 +21,15 @@ body {
     padding: 10px;
     width: 100%;
     height: auto; 
-    object-fit: cover; 
+    object-fit: cover;
+    background-color: white;
+    border-radius: 10px;
 }
 .artwork img {
-    width: 100%;
-    height: auto; 
+    width: 300px;
+    height: 250px; 
     object-fit: cover; 
+    border-radius: 10px;
 }
 #art {
     height: 750%;
@@ -37,7 +41,7 @@ button {
     height: 40px;
     width: 150px;
 }
-
+/* Media Queries */
 @media screen and (max-width: 767px) {
     .navbar {
         display: flex;

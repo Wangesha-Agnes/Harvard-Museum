@@ -52,7 +52,7 @@ function displayArtworks(artworks) {
     resultsContainer.innerHTML = '';
     artworks.forEach(artwork => {
         const artworkElement = document.createElement('div');
-        artworkElement.className = 'artwork-wrapper';
+        artworkElement.className = 'artwork-wrapper'; // Add a class for the wrapper div
         const imgDiv = document.createElement('div'); 
         imgDiv.className = 'artwork'; 
         const title = artwork.title || 'Unknown Title';
