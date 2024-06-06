@@ -1,5 +1,6 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: darkslategray;
 }
 .search-container {
     margin: 20px;
@@ -11,6 +12,12 @@ body {
     border: 5px;
     color: white;
     border-radius: 25% 50%;
+    justify-content: space-around;
+    gap: 20px;
+}
+.artwork-wrapper {
+    flex-basis: calc(33.33% - 20px); 
+    max-width: 300px;
 }
 
 #results{
@@ -27,21 +34,24 @@ body {
 .artwork {
     border: 1px solid #ccc;
     padding: 10px;
-    width: 300px;
+    width: 100%;
+    height: auto; 
+    object-fit: cover;
+    background-color: white;
+    border-radius: 10px;
 }
 .artwork img {
-    width: 100%;
+    width: 300px;
+    height: 250px; 
+    object-fit: cover; 
+    border-radius: 10px;
 }
-
-#art{
-   height: 800px;
-   object-fit: cover;
-   width: 100%;
-   /* position:absolute; */
-
+#art {
+    height: 750%;
+    object-fit: cover;
+    width: 300%;
 }
-
-button{
+button {
     border-radius: 10px;
     height: 40px;
     width: 150px; 
@@ -78,45 +88,39 @@ a{
    background-color: rgb(44, 183, 183);
 
 }
-
 @media screen and (max-width: 767px) {
-    .navbar{
-        display: flex;  
+    .navbar {
+        display: flex;
         gap: 5px;
         margin-right: 5px;
-      }  
-      #art{
-          height:550px
-      }
-
+    }
+    #art {
+        height: 550px;
+    }
 }
-
 @media screen and (min-width: 768px) and (max-width:1138px) {
-.navbar{
-  display: flex;  
-  gap: 5px;
-  margin-right: 5px;
-}  
-#art{
-    height:800px
+    .navbar {
+        display: flex;
+        gap: 5px;
+        margin-right: 5px;
+    }
+    #art {
+        height: 800px;
+    }
+    input {
+        margin-top: 100px;
+    }
+    button {
+        margin-top: 100px;
+    }
 }
-input{
-    margin-top: 100px;
-  }
-  button{
-    margin-top: 100px;
-  }
-}
-
 @media screen and (min-width: 992px) {
-    .navbar{
-        display: flex;  
+    .navbar {
+        display: flex;
         gap: 50px;
         font-size: larger;
-       
-      }  
-      #art{
-          height:700px
-}
-
+    }
+    #art {
+        height: 700px;
+    }
 }
