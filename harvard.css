@@ -30,11 +30,7 @@ body {
 button{
     border-radius: 10px;
     height: 40px;
-<<<<<<< HEAD
     width: 150px; 
-=======
-    width: 80px;
->>>>>>> feature/5
 }
 
 input{
