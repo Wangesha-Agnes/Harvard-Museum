@@ -55,6 +55,7 @@ async function searchArtworks() {
     resultsContainer.innerHTML = '';
     artworks.forEach(artwork => {
     const artworkElement = document.createElement('div');
+    artworkElement.classList.add('photo-card')
     artworkElement.className = 'artwork';
     const title = artwork.title || 'Unknown Title';
     const artist = artwork.people ? artwork.people.map(person => person.name).join(', ') : 'Unknown Artist';

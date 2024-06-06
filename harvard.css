@@ -7,9 +7,23 @@ body {
 .artwork-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    overflow: hidden;
+    gap: 50px;
+    border: 5px;
+    color: white;
+    border-radius: 25% 50%;
 }
+
+#results{
+    border-radius: 13%;
+}
+ #search-input{
+  width: 400px;  
+  padding-left: 8px;
+  margin-left: 600px;
+}
+#button{
+    height: 45px;
+} 
 .artwork {
     border: 1px solid #ccc;
     padding: 10px;
@@ -30,11 +44,7 @@ body {
 button{
     border-radius: 10px;
     height: 40px;
-<<<<<<< HEAD
     width: 150px; 
-=======
-    width: 80px;
->>>>>>> feature/5
 }
 
 input{
@@ -49,23 +59,23 @@ a{
 .navbar{
     gap: 120px;
     /* position: relative; */
-    display: flex;
-    text-decoration-color: white;
-    background-image: url(Images/museum.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: initial;
-    color: white;
+    
+}
+.photo-card{
+    background-color: aliceblue;
 }
 
 .navtext{
     gap: 10px;
     margin-top: 20px;
-    color: rgb(7, 7, 7);
+    color:white;
 }
 
 #body{
-    background-color: #8c8bbd;
+   background-color: rgb(44, 183, 183);
 
 }
 
