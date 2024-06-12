@@ -1,6 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: darkslategray;
+  
 }
 .search-container {
     margin: 20px;
@@ -46,7 +47,8 @@ button {
     width: 400px;
     padding-left: 8px;
     margin-left: 600px;
-    height: 30px;
+    height: 34px;
+    border-radius: 10px;
   }
 
 .navbar{
@@ -55,11 +57,19 @@ button {
     background-repeat: no-repeat;
     background-position: center;
     width: 1900px;
-    height: 800px;
+    height: 400px;   
 }
 
-#suggestions{
+/* #img{
+    background-color: black;
+    opacity: 0.6;
+    width: 100%;
+    display: flex;
+} */
+
+#suggestions:hover{
     cursor: pointer;
+    background-color: #ccc;
 }
 
 #suggestions{
@@ -71,18 +81,77 @@ button {
 } 
 
 .navtext{
-    color: white;
+    color:white;
     text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+    padding-left: 550px;
+    
+}
+#navigation{
+    display: flex;
+    gap: 20%;
 }
 /* Media Queries */
-@media screen and (max-width: 767px) {
+@media screen and (min-width:280px)and(max-width: 667px) {
     .navbar{
         background-image: url(Images/museum\ hill.jpg);
         background-size:cover;
         background-repeat: no-repeat;
         background-position: center;
-        width: 480px;
+        width: 360px;
         height: 400px;
+    }
+
+    .navtext{
+        color:white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 25px;
+        padding-left: 0px;
+        
+    }
+    #art {
+        height: 550px;
+    }
+
+    .search-container {
+        /* margin: 20px; */
+        margin: 0px;
+        display: flex;
+    }
+
+    #search-input{
+        width: 100px;
+        padding-left: 8px;
+        margin-left: 0px;
+        height: 30px;
+      }
+      #img{
+        background-color: black;
+        opacity: 0.6;
+        width: 100%;
+        display: flex;
+    }
+    
+}
+@media screen and (min-width:668px) and (max-width: 887px) {
+    .navbar{
+        background-image: url(Images/museum\ hill.jpg);
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 600px;
+        height: 400px;
+    }
+
+    .navtext{
+        color:white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 25px;
+        padding-left: 40px;
+        
     }
     #art {
         height: 550px;
@@ -99,30 +168,108 @@ button {
         margin-left: 0px;
         height: 30px;
       }
-}
-@media screen and (min-width: 768px) and (max-width:1138px) {
-    .navbar {
+      /* #img{
+        background-color: black;
+        opacity: 0.6;
+        width: 100%;
         display: flex;
-        gap: 5px;
-        margin-right: 5px;
-    }
-    #art {
-        height: 800px;
-    }
-    input {
-        margin-top: 100px;
-    }
-    button {
-        margin-top: 100px;
-    }
+    } */
 }
-@media screen and (min-width: 992px) {
-    .navbar {
-        display: flex;
-        gap: 50px;
-        font-size: larger;
+
+
+    @media screen and (min-width:1024px) and (max-width: 1260px) {
+        .navbar{
+            background-image: url(Images/museum\ hill.jpg);
+            background-size:cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 800px;
+            height: 400px;
+        }
+    
+        .navtext{
+            color:rgb(6, 6, 6);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 29px;
+            padding-left: 40px;
+            
+        }
+        #art {
+            height: 550px;
+        }
+    
+        .search-container {
+            /* margin: 20px; */
+            display: flex;
+            padding: 20px ;
+        }
+    
+        #search-input{
+            width: 400px;
+            /* padding-left: 58px; */
+            margin-left: 0px;
+            height: 50px;
+          }
+        #search-input button{
+            width: 400px;
+            /* padding-left: 58px; */
+            margin-left: 0px;
+            height: 50px; 
+        }
+        #suggestions{
+            text-align: center;
+            background-color: white;
+            border-radius: 20px;
+            width: 40%;
+            margin-left: 0px;
+        } 
     }
-    #art {
-        height: 700px;
+    @media screen and (min-width:1280px) and (max-width: 1290px) {
+        .navbar{
+            background-image: url(Images/museum\ hill.jpg);
+            background-size:cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 1205px;
+            height: 400px;
+        }
+    
+        .navtext{
+            color:rgb(6, 6, 6);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 29px;
+            padding-left: 40px;
+            
+        }
+        #art {
+            height: 550px;
+        }
+    
+        .search-container {
+            /* margin: 20px; */
+            display: flex;
+            padding: 20px ;
+        }
+    
+        #search-input{
+            width: 600px;
+            /* padding-left: 58px; */
+            margin-left: 0px;
+            height: 50px;
+          }
+        #search-input button{
+            width: 600px;
+            /* padding-left: 58px; */
+            margin-left: 0px;
+            height: 50px; 
+        }
+        #suggestions{
+            text-align: center;
+            background-color: white;
+            border-radius: 20px;
+            width: 400px;
+            margin-left: 0px;
+        } 
     }
-}
