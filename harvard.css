@@ -68,14 +68,13 @@ a{
 
 .navbar{
     gap: 120px;
-    /* position: relative; */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: initial;
     
 }
 .photo-card{
-    background-color: aliceblue;
+    background-color: rgb(7, 45, 78);
 }
 
 .navtext{
@@ -85,7 +84,7 @@ a{
 }
 
 #body{
-   background-color: rgb(44, 183, 183);
+   background-color: rgb(62, 75, 75);
 
 }
 @media screen and (max-width: 767px) {
